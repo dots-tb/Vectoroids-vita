@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1">
+  <name>Vectoroids</name>
+  <coder>MiniK</coder>
+  <version>1.1.0</version>
+  <release_date></release_date>
+  <short_description>Asteroids Clone</short_description>
+  <long_description>"Vectoroids" is a clone of the classic arcade game "Asteroids" by Atari. Your objective is to maneuver a space ship within a field of asteroids, and shoot them into smaller and smaller pieces, eventually destroying them completely.</long_description>
+</app>

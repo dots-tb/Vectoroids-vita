@@ -1,0 +1,118 @@
+CHANGES.txt for "Vectoroids"
+
+by Bill Kendrick
+bill@newbreedsoftware.com
+http://www.newbreedsoftware.com/vectoroids/
+
+April 20, 2002
+
+Version 1.1.0
+
+
+2002.04.20 (1.1.0)
+  * Lowered volume of game-over sound (it was ear-piercing on the Zaurus!)
+
+  * Reduced length of shots in embedded version (screen is smaller...)
+
+  * Reduced max. number of asteroids on screen at once for embedded version
+
+
+2002.04.14 (1.0.9)
+  * Fixed compile error for desktop version.  (Thanks Christian Steigies)
+
+  * Tweaked embedded version
+  
+    - Made score and level smaller
+
+    - Made ship's flame look better
+
+    - Made zooming 'LEVEL' display brighter
+
+    - Increased contrast and blur of background image
+    
+    - Reduced background image to 8bit, shrinking its file size
+
+  * Update version number in docs and man page.
+
+
+2002.04.13 (1.0.8)
+  * Created 'embedded' target (for iPaq and Zaurus PDAs running Linux)
+
+
+2002.01.03 (1.0.7)
+  * Makefile update
+
+    - Install target changes by Christian T. Steigies <cts@debian.org>
+
+
+2002.01.02/2001.01.03 (1.0.6/1.0.6b)
+  * Documentation update
+  
+    - Updated music author's (Mike Faltiss's) contact info. in README.txt
+
+
+2001.12.02 (1.0.5)
+  * More MSVC++ fixes
+    (Thanks to Ton Fleuren)
+
+    - "DATA_PREFIX" get's #define'd to "data/" if it wasn't defined by
+      the compiler.
+
+  * Fullscreen tweak
+
+    - Mouse pointer is now hidden during the game in fullscreen mode.
+
+
+2001.12.02 (1.0.4)
+  * Code tweaks for cleaner compilation under MS Visual C++ compiler
+    (Thanks to Jason Hall and Joshua Goldstein)
+
+    - Added "-pedantic" and "-ansi" to CFLAGS in Makefile
+    - State-file is stored in current directory (folder) if "_WIN32" was
+      #define'd (which it should be under MSVC++)
+      (filename: "vectoroids-state.dat")
+
+
+2001.12.01 (1.0.3)
+  * Bug fixes and tweaks:
+
+    - Joystick 'Up' no longer thrusts (directions interfered too much with
+      Fire-A control, especially on gamepads)
+    - "GAME OVER" text display bugfix.
+
+
+2001.12.01 (1.0.2)
+  * Makefile tweak
+
+    - Created the 'man/man6/' directory path, if it doesn't exist.
+
+
+2001.12.01 (1.0.1)
+  * Gameplay tweaks:
+    (The screen-size increase, even with the larger objects, made
+    Vectoroids 1.0 much easier than Agendaroids.  The changes below make
+    the game more difficult (and hopefully, therefore, more entertaining))
+
+    - Ship's inertia reduces more slowly
+    - Reduced number of bullets allowed on screen to 2
+    - Asteroids have a faster initial speed
+
+
+2001.12.01 (1.0)
+  * Initial port from X-Window interface for Linux PDAs ("Agendaroids")
+    to libSDL for No Starch / Loki contest ("Vectoroids"):
+
+    - X-Window calls replaced with SDL calls.
+    - Added joystick support.
+    - Size increased to 480x480.
+    - Color added.
+    - Background photo added.
+    - Digitized sound effects added.
+    - Music added.
+    - On-screen stylus controls removed.
+    - Ship rotates with more granularity.
+    - Framerate increased.
+    - Command-line options added
+      ("--help", "--usage", "--copying", "--version" displays, and
+       "--fullscreen" and "--nosound" options)
+    - Ship icons in lives-left display at top right shrink when you die.
