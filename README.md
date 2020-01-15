@@ -17,9 +17,13 @@ CONTROLS
 Hold the Vita (or controller) sideways 
 
 PS Btn	Exit to loader 
+
 Start 	Return to menu 
+
 Cross	Shoot
+
 Circle	Thrust 
+
 
 
 
